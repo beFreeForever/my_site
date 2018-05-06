@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+	<meta http-equiv="Content-Language" content="ru">
+	<link rel="shortcut icon" href="/icons/2.ico" type="image/x-icon">
+	<TITLE> Вход </TITLE>
+		<script src="https://unpkg.com/vue"></script>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<style>
+	p {
+		margin: auto;
+		position: absolute;
+		bottom: 50%;
+	}
+	
+	</style>
+</HEAD>
+
+<BODY>
+	<div >
+	<BR>
+	<FORM align="center" method="POST" action = "login.php">
+		<INPUT type = "text" name = "mail" value="" title="Введите почту, указанную при регистрации">
+		<BR>
+		<INPUT type="password"  name="pass" title="Введите пароль">
+		<BR><BR>
+		<INPUT type="submit" value="Войти" name="OK" title="Отправить информацию на сервер">
+	</form>
+	<hr align="center" size="2" color="#6B8E23" />
+	<FORM align="center" method="get" action = "registration.html">
+		<INPUT type="submit" value="Зарегистрироваться" name="reg" title="Регистрация на сайте">
+	</form>
+	</div>
+	
+	<div id="app" style="color:white;">
+		<p v-for=">
+		</p>
+	</div>
+	<!--<p><a href="https://vk.com/hospitaler17">|admin|</a></p>-->
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				message: ''
+			},
+			
+		})
+	</script>
+</BODY>
+</HTML>
